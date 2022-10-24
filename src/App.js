@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import AppClass from './AppClass';
+import AppContext from "./AppContext";
+import AppRef from "./AppRef";
+import AppState from './AppState';
+import AppTodo from './AppTodo';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <AppRef />
+      <AppContext />
+      <AppClass />
+      <AppTodo />
+      <AppState />
     </div>
   );
 }
